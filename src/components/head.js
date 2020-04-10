@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
+import logoIcohotlist from '../static/logo-icohotlist.png'
 
 const Head = ({ title }) => {
     const data = useStaticQuery(graphql`
@@ -13,6 +14,9 @@ const Head = ({ title }) => {
         }
     `)
     return (
+        <Helmet>
+            <link rel="icon" href={logoIcohotlist}/>
+        </Helmet>
         <Helmet title={`${title} | ${data.site.siteMetadata.title}`}/>
     )
 }
