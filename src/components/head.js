@@ -12,7 +12,6 @@ const Head = ({ title }) => {
             }
         }
     `)
-<<<<<<< HEAD
     return (
         <Helmet link={[
             {"rel": "icon", 
@@ -21,10 +20,6 @@ const Head = ({ title }) => {
             }
            ]}
            title={`${title} | ${data.site.siteMetadata.title}`}/>
-=======
-    return (   
-        <Helmet title={`${title} | ${data.site.siteMetadata.title}`}/>
->>>>>>> b8fa489b4dd9704ed67786ed77dc30ffe812ca1a
     )
 }
 
