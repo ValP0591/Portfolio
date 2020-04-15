@@ -13,7 +13,13 @@ const Head = ({ title }) => {
         }
     `)
     return (
-        <Helmet title={`${title} | ${data.site.siteMetadata.title}`}/>
+        <Helmet link={[
+            {"rel": "icon", 
+             "type": "image/png", 
+             "href": "favicon.png"
+            }
+           ]}
+           title={`${title} | ${data.site.siteMetadata.title}`}/>
     )
 }
 
