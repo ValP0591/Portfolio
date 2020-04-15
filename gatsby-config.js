@@ -18,7 +18,10 @@ module.exports = {
     title: `My potfolio`,
     author: `Val P`,
     description: `I made this site via the Gatsby - fast modern site generator for React`
-  },
+  
+/* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
+  w3l_dom_key:`5e96ee75f0893CF_Domain_verify`
+},
   plugins: [
     'gatsby-plugin-react-helmet',
     {
