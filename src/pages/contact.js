@@ -17,38 +17,29 @@ const ContactPage = ({
       <Helmet>
         <title>Contact — {site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
-      </Helmet>
-      <div className={contactStyles.twoGridsContact}>
-        <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
+      </Helmet>       
           <h1 className="post-title">Get in Touch</h1>
           <p>Let me help you kick start your next project</p>
-        </div>
-        <div>
-          <form className={contactStyles.formContainer} action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
-            <div>
-              <label htmlFor="w3lName">Name</label>
-              <input type="text" name="w3lName" id="w3lName"/>
-            </div>
-            <div>
-              <label htmlFor="w3lSender">Email</label>
-              <input type="email" name="w3lSender" id="w3lSender"/>
-            </div>
-            <div>
-              <label htmlFor="w3lSubject">Subject</label>
-              <input type="text" name="w3lSubject" id="w3lSubject"/>
-            </div>
-            <div>
-              <label htmlFor="w3lMessage">Message</label>
-              <textarea name="w3lMessage" id="w3lMessage"></textarea>
-            </div>
-           
-                <div style={{display: "flex", justifyContent: "flex-end"}}>
-               <input type="submit" className={contactStyles.button} style={{marginRight: 0}} />
-            </div>
-            
-          </form>
-        </div>
-      </div>
+          <div>
+            <form className={contactStyles.formContainer} form method="post" netlify-honeypot="bot-field" data-netlify="true">
+              <input type="hidden" name="bot-field"/>
+              <label>
+                Email
+                <input type="email" name="email" />
+              </label>
+              <label>
+                Name
+                <input type="text" name="name" />
+              </label>
+              <label>
+                Message
+                <input type="text" name="message" />
+              </label>
+              <hr></hr>
+              <button type="submit">Let`s do it!</button>
+              
+            </form>
+          </div>
     </Layout>
   )
 }
