@@ -4,7 +4,8 @@ import Layout from '../components/layout'
 import Helmet from "react-helmet"
 import { graphql } from 'gatsby'
 import contactStyles from './contact.module.scss'
-import Button from 'react-bootstrap'
+import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
 
 
 const ContactPage = ({
@@ -23,21 +24,13 @@ const ContactPage = ({
           <div>
             <form className={contactStyles.formContainer} form method="post" netlify-honeypot="bot-field" data-netlify="true">
               <input type="hidden" name="bot-field"/>
-              <label>
-                Email
-                <input type="email" name="email" />
-              </label>
-              <label>
-                Name
-                <input type="text" name="name" />
-              </label>
-              <label>
-                Message
-                <input type="text" name="message" />
-              </label>
-              <hr></hr>
-              <button type="submit">Let`s do it!</button>
-              
+                <Form.Control placeholder="Your name" input type="text" name="name" />
+                <Form.Control placeholder="E-mail" input type="email" name="email" />
+                <Form.Control as="textarea" rows="3" placeholder="Your message" input type="text" name="message" />
+                  <hr></hr>
+              <div className="d-flex justify-content-end">
+                <Button variant="primary" size="lg" type="submit" >Let`s do it!</Button>
+              </div>
             </form>
           </div>
     </Layout>
