@@ -42,8 +42,8 @@ const ContactPage = ({
             <form className={contactStyles.formContainer} form method="post" netlify-honeypot="bot-field" data-netlify="true"> 
               <input type="hidden" name="bot-field"/>
                 <Form.Control placeholder="Your name" input type="text" name="name"/>
-                <Form.Control placeholder="E-mail" input type="email" name="email" />
-                <Form.Control as="textarea" rows="3" placeholder="Some thoughts about your project to be" input type="text" name="message"/>
+                <Form.Control placeholder="E-mail" input type="email" name="email"/>
+                <Form.Control input type="textarea" rows="3" placeholder="Some thoughts about your project to be" input type="text" name="message"/>
                 <hr></hr>
               <div className="d-flex justify-content-end">
                 <Button variant="secondary" type="submit" style={{

@@ -7,8 +7,8 @@ import Layout from '../components/layout'
 const Success = () => {
     return (
         <Layout>
-            <Head title="404"/>
-            <h1>The message is send!</h1>
+            <Head title="Success"/>
+            <h1>The message has been send!</h1>
             <p><Link to="/">Let`s get back to home page</Link></p>
         </Layout>
     )
