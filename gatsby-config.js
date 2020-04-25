@@ -40,6 +40,7 @@ module.exports = {
       }
     },
     'gatsby-plugin-sharp',
+    'gatsby-plugin-dark-mode',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -56,5 +57,11 @@ module.exports = {
       }
     },
     'gatsby-plugin-netlify-cms',
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
   ]
 }

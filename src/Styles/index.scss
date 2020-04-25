@@ -1,16 +1,39 @@
 @import "~bootstrap/scss/bootstrap";
 
 html {
-    font-family: sans-serif;
+    font-family: Oswald;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
+
   body {
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #f5e993;
+    --bg: #f5e993;
+    --textNormal: rgb(236, 43, 43);
+    --textTitle: #222;
+    --textLink: #f5e993;
+    --linkBackground: #ff5e6c; 
+    --hr:rgba(70, 68, 68, 0);
+    --buttonText: white;
+  
+    background-color: var(--bg);
+   
   }
+  
+  body.dark {
+    -webkit-font-smoothing: antialiased;
+    --bg: rgb(35, 36, 36);
+    --textNormal: rgba(255, 255, 255, 0.88);
+    --textTitle: white;
+    --textLink: white;
+    --linkBackground: white; 
+    --hr: rgba(255, 255, 255, 0.808);
+    --buttonText: white;
+  }
+
+  input {
+    display: none;
+  }
+
   article,
   aside,
   details,
@@ -64,9 +87,9 @@ html {
     font-style: italic;
   }
   h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+    
   }
+
   mark {
     background-color: #ff0;
     color: #000;
@@ -123,6 +146,7 @@ html {
   input {
     overflow: visible;
   }
+  
   button,
   select {
     text-transform: none;

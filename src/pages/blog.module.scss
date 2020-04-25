@@ -1,23 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway&family=Titillium+Web:wght@900&display=swap');
+
+
 .posts {
     list-style-type: none;
     margin: 0;
     display: flex;
     flex-direction: column;
+   
 }
 
 .post {
     margin: 1rem .5rem;
-    min-width: 20rem;
-    border-left: rgb(121, 120, 120) solid .5em;
-    border-radius: .2em 1em 2em .2em;
+    min-width: 15rem;
+    border-left: rgba(121, 120, 120, 0.623) solid 1em;
+    border-radius: .5em 1em 2em .5em;
 
     a {
-        background-color: rgb(207, 207, 207);
+        background-color: rgba(83, 83, 83, 0.103);
         color: #000;
         display: block;
         padding: 1rem;
         text-decoration: none;
-        border-radius: .2em .1em .2em .2em;
+        transition: all .2s ease-in-out;
+        border-radius: 0px 10px 10px 0px;
+       
 
         &:nth-child() {
             background-color: red;
@@ -25,16 +31,30 @@
     }    
     
     a:hover {
-        background: #d8bb94;
+        background: #d8bb9423;
     }
 
     h2{
         margin-bottom: 0;
     }
+}
 
-    p {
-        color: #777;
-        font-size: .8rem;
-        font-style: italic;
-    } 
+h1 {
+    font-size: 5em;
+    font-family:'Titillium Web', sans-serif;
+}
+
+h3 {
+    margin-top: 2em;
+    font-family:'Titillium Web', sans-serif;
+}
+
+blockquote {
+    padding: 1em 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
 }

@@ -1,5 +1,6 @@
 .header {
     padding: 1rem 0 3rem;
+    border-radius: 1em;
 }
 
 .title {
@@ -12,6 +13,8 @@
     display: flex;
     list-style-type: none;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: lowercase;
 }
 
 .nav-item {
@@ -20,7 +23,7 @@
     text-decoration: none;
     margin-right: 1.6em;
     font-weight: 600;
-
+    margin-left: 1em;
 }
 
 .nav-item:hover {
@@ -47,3 +50,9 @@
     padding: .5em;
     border-radius: .2em;
 }
+
+
+
+
+
+
