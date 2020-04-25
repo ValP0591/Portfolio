@@ -38,14 +38,32 @@ const ContactPage = ({
             fontWeight: 300,               
           }}
           >Let me help you kick start your next project</p>
-          <div>
-          <form>
-            <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+         
+            <Form className={contactStyles.formContainer} form method="post" netlify-honeypot="bot-field" data-netlify="true"> 
               <input type="hidden" name="bot-field"/>
-                <Form.Control placeholder="Your name" input type="text" name="name"/></label>
-                <Form.Control placeholder="E-mail" input type="email" name="email"/>
-                <Form.Control placeholder="Phone number" input type="phone" name="phone"/>
-                <Form.Control as="textarea" rows="3" placeholder="Some thoughts about your project to be" input type="text" name="message"/>
+                <Form.Group controlId="formBasicName">
+                  <Form.Label>Your name</Form.Label>
+                  <Form.Control
+                     required
+                     type="text"
+                     placeholder="Your Name"/>
+                </Form.Group>
+                
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+                </Form.Group>
+                
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Phone number</Form.Label>
+                  <Form.Control placeholder="Phone number" input type="phone" name="phone"/>
+                </Form.Group>
+
+                
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                  <Form.Label>Your message</Form.Label>
+                  <Form.Control as="textarea" rows="3" />
+                </Form.Group>
                 <hr></hr>
               <div className="d-flex justify-content-end">
                 <Button variant="secondary" type="submit" style={{
@@ -59,8 +77,7 @@ const ContactPage = ({
                         textTransform: 'uppercase',       
                     }}>Let's do it!</Button>
               </div>
-            </form>
-          </div>
+          </Form>
     </Layout>
   )
 }
