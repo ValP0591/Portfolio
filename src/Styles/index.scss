@@ -31,7 +31,11 @@ html {
   }
 
   input {
-    display: none;
+    min-width: 20em;
+    margin-left: 11rem;
+    padding: 1em;
+    background-color: green;
+   
   }
 
   article,

@@ -45,21 +45,22 @@ const ContactPage = ({
                       Name
                       <input type="text" name="name" id="name" />
                     </label>
+                    <br></br>
                     <label>
                       Email
                       <input type="email" name="email" id="email" />
                     </label>
+                    <br></br>
                     <label>
-                      Subject
+                                            Subject
                       <input type="text" name="subject" id="subject" />
-                    </label>
+                    </label><br></br>
                     <label>
                       Message
                       <textarea name="message" id="message" rows="5" />
                     </label>
-                    <button type="submit">Send</button>
-                    <input type="reset" value="Clear" />
-
+                    <br></br>
+                    
                 <Button variant="secondary" type="submit" style={{
                         ...scale(.8),
                         fontFamily: `Titillium Web, sans-serif`,
