@@ -39,7 +39,8 @@ const ContactPage = ({
           }}
           >Let me help you kick start your next project</p>
           <div>
-            <form method="post" netlify-honeypot="bot-field" data-netlify="true"> 
+          <form>
+            <form method="post" netlify-honeypot="bot-field" data-netlify="true">
               <input type="hidden" name="bot-field"/>
                 <Form.Control placeholder="Your name" input type="text" name="name"/></label>
                 <Form.Control placeholder="E-mail" input type="email" name="email"/>
