@@ -39,7 +39,7 @@ const ContactPage = ({
           }}
           >Let me help you kick start your next project</p>
           <div>
-            <form className={contactStyles.formContainer} form method="post" netlify-honeypot="bot-field" data-netlify="true" action="/success"> {/*You can replace the default success message with a custom page you create by adding an action attribute to the <form> tag, entering the path of your custom page (like "/pages/success") as the value. The path must be relative to the site root, starting with a /.*/}
+            <form className={contactStyles.formContainer} form method="POST" netlify-honeypot="bot-field" data-netlify="true"> 
               <input type="hidden" name="bot-field"/>
                 <Form.Control placeholder="Your name" input type="text" name="name" style={{
                 ...scale(.8),
