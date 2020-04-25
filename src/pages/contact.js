@@ -39,33 +39,27 @@ const ContactPage = ({
           }}
           >Let me help you kick start your next project</p>
          
-            <Form className={contactStyles.formContainer} form method="post" netlify-honeypot="bot-field" data-netlify="true"> 
-              <input type="hidden" name="bot-field"/>
-                <Form.Group controlId="formBasicName">
-                  <Form.Label>Your name</Form.Label>
-                  <Form.Control
-                     required
-                     type="text"
-                     placeholder="Your Name"/>
-                </Form.Group>
-                
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
-                </Form.Group>
-                
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Phone number</Form.Label>
-                  <Form.Control placeholder="Phone number" input type="phone" name="phone"/>
-                </Form.Group>
+         <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+           <input type="hidden" name="bot-field" />
+                    <label>
+                      Name
+                      <input type="text" name="name" id="name" />
+                    </label>
+                    <label>
+                      Email
+                      <input type="email" name="email" id="email" />
+                    </label>
+                    <label>
+                      Subject
+                      <input type="text" name="subject" id="subject" />
+                    </label>
+                    <label>
+                      Message
+                      <textarea name="message" id="message" rows="5" />
+                    </label>
+                    <button type="submit">Send</button>
+                    <input type="reset" value="Clear" />
 
-                
-                <Form.Group controlId="exampleForm.ControlTextarea1">
-                  <Form.Label>Your message</Form.Label>
-                  <Form.Control as="textarea" rows="3" />
-                </Form.Group>
-                <hr></hr>
-              <div className="d-flex justify-content-end">
                 <Button variant="secondary" type="submit" style={{
                         ...scale(.8),
                         fontFamily: `Titillium Web, sans-serif`,
@@ -76,8 +70,7 @@ const ContactPage = ({
                         fontWeight: 800,   
                         textTransform: 'uppercase',       
                     }}>Let's do it!</Button>
-              </div>
-          </Form>
+                    </form>
     </Layout>
   )
 }
