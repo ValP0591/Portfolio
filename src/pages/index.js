@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col'
 import Head from '../components/head'
 import Button from 'react-bootstrap/Button'
 import { rhythm, scale } from "../utils/typography"
+import Hello from '../components/hello'
 
 
 
@@ -17,17 +18,10 @@ const IndexPage = () => {
         <Layout>
           <Head title="Home"/>
             <Row>
-                <Col Col lg = "8" sm = "10" md = "8" xs ="12"><h1
-                    style={{
-                        ...scale(3),
-                        fontFamily: `Titillium Web, sans-serif`,
-                        marginBottom: rhythm(1),
-                        color: 'var(--textTitle)',
-                        transition: 'color 0.2s ease-out, background 0.2s ease-out',
-                        fontWeight: 900,
-                        letterSpacing: -1,
-                    }}
-                >Hello!!</h1></Col></Row>
+                <Col>
+                    <Hello/>
+                </Col>
+            </Row>
             
             <Row>
                 <Col Col lg = "10" sm = "10" md = "8" xs ="12"><h2
