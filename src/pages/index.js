@@ -48,7 +48,7 @@ const IndexPage = () => {
             }}
             >Need a developer?</h5>
             
-            <Button variant="secondary"><Link to ="/contact"
+            <Button variant="secondary"><Link to ="/contact/"
                 style={{
                     ...scale(.8),
                     fontFamily: `Titillium Web, sans-serif`,
