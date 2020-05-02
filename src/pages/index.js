@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import giphy from '../../images/giphy1.gif'
-import indexStyles from './index.module.scss'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -10,8 +9,6 @@ import Head from '../components/head'
 import Button from 'react-bootstrap/Button'
 import { rhythm, scale } from "../utils/typography"
 import Hello from '../components/hello'
-
-
 
 const IndexPage = () => {
     return (  
