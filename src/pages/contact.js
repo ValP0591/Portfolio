@@ -4,8 +4,6 @@ import Layout from '../components/layout'
 import Helmet from "react-helmet"
 import { graphql } from 'gatsby'
 import contactStyles from './contact.module.scss'
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form'
 import { rhythm, scale } from "../utils/typography"
 import ContactForm from '../components/contactForm'
 
