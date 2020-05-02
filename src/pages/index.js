@@ -55,7 +55,8 @@ const IndexPage = () => {
                     transition: 'color 1.2s ease-out, background 0.2s ease-out',
                     fontWeight: 800,   
                     textTransform: 'uppercase', 
-                    textShadow: '1px 1px 1px black',       
+                    textShadow: '1px 1px 1px black',
+                    textDecoration: 'none',       
                 }}
             >Call me now</Link></Button>
            

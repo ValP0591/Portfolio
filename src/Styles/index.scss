@@ -14,9 +14,8 @@ html {
     --linkBackground: #ff5e6c; 
     --hr:rgba(70, 68, 68, 0);
     --buttonText: white;
-  
+    --textForm: black; 
     background-color: var(--bg);
-   
   }
   
   body.dark {
@@ -28,6 +27,7 @@ html {
     --linkBackground: white; 
     --hr: rgba(255, 255, 255, 0.808);
     --buttonText: white;
+    --textForm: black;
   }
 
   input {
