@@ -27,6 +27,16 @@ const ContactForm = (props) => (
                     fontWeight: 200,
                     letterSpacing: -1,
                     }}/>
+                <Form.Control placeholder="E-mail" input type="email" name="email" style={{
+                    ...scale(.8),
+                    fontFamily: `Raleway, sans-serif`,
+                    textTransform: 'uppercase',
+                    marginBottom: rhythm(1),
+                    color: 'var(--textTitle)',
+                    transition: 'color 0.2s ease-out, background 0.2s ease-out',
+                    fontWeight: 200,
+                    letterSpacing: -1,
+                    }}/>
                 <Form.Control as="textarea" rows="3" placeholder="Some thoughts about your project to be" input type="text" name="message" style={{
                     ...scale(.8),
                     fontFamily: `Raleway, sans-serif`,
