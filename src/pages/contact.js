@@ -1,13 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import Helmet from "react-helmet"
+import Head from '../components/head'
 import { graphql } from 'gatsby'
-import contactStyles from './contact.module.scss'
 import { rhythm, scale } from "../utils/typography"
 import ContactForm from '../components/contactForm'
-
-
 
 const ContactPage = ({
   data: {
@@ -16,10 +12,7 @@ const ContactPage = ({
 }) => {
   return (
     <Layout>
-      <Helmet>
-        <title>Contact — {site.siteMetadata.title}</title>
-        <meta name="description" content={site.siteMetadata.description} />
-      </Helmet>       
+      <Head title="Contact"/>
           <h1 style={{
             ...scale(2),
             marginBottom: rhythm(1),
@@ -38,9 +31,6 @@ const ContactPage = ({
           }}
           >Let me help you kick start your next project</p>
           <ContactForm />
-
-
-          
     </Layout>
   )
 }

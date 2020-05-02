@@ -29,9 +29,11 @@ const AboutPage = () => {
             }}>
               <p>I`m 36 yo and have 10 years of experience in UI</p>
               <p>I create this site with Gatsby and Contentful</p>
-              <p>Java Script is my one and only, my belowed, my sanctuary. <br></br>Since the moment I get to know it I fell in love with JS.</p>
+              <p>Java Script is my one and only programming language to use. <br>
+              </br>Since the moment I get to know it I fell in love with JS.</p>
+        
               <p>So, what are you waiting for? </p></div> 
-              <Button variant="outline-secondary"><Link to ="/contact"
+              <Button variant="outline-secondary"><Link to ="/contact/"
                 style={{
                     ...scale(.8),
                     fontFamily: `Titillium Web, sans-serif`,
