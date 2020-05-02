@@ -27,7 +27,7 @@ const Footer = () => {
               fontWeight: 200,   
               textTransform: 'uppercase', 
               }}
-              >This site is made with Gatsby. If you`d like to know how it works please be sure to<Link to ="/contact" style={{
+              >This site is made with Gatsby. If you`d like to know how it works please be sure to <Link to ="/contact" style={{
                 color: 'var(--textTitle)',
                 transition: 'color 1.2s ease-out, background 0.2s ease-out',
                 fontWeight: 200,   
