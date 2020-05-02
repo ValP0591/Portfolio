@@ -30,16 +30,16 @@ const Header = () => {
             </Col>
           </Row>*/}
           <Row>
-            <Col xs={10} sm={11}>            
+            <Col xs ={10} sm={11}>            
               <nav>
                 <ul className={headerStyles.navList}>
-                  <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/">First page</Link></li>
-                  <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/about">Some bio</Link></li>
+                  <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/">First</Link></li>
+                  <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/about">bio</Link></li>
                   <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/blog">Blog</Link></li>
                 </ul>
               </nav>
             </Col>
-            <Col xs={2} sm={1}>          
+            <Col xs ={2} sm={ 1 }>          
                 <ThemeToggler>
                   {({ theme, toggleTheme }) => (
                     <label style={{
