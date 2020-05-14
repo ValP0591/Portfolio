@@ -1,8 +1,10 @@
 import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
+import Link from 'gatsby-plugin-transition-link'
 import  Row from 'react-bootstrap/Row'
 import  Col from 'react-bootstrap/Col'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 // import './header.module.scss'
 import headerStyles from './header.module.scss'
@@ -33,10 +35,11 @@ const Header = () => {
             <Col xs ={10} sm={11}>            
               <nav>
                 <ul className={headerStyles.navList}>
-                  <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/">First</Link></li>
-                  <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/about">bio</Link></li>
-                  <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/blog">Blog</Link></li>
+                  <li><AniLink className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} cover to="/" direction="left" bg="#6c757d" duration={2}>First</AniLink></li>
+                  <li><AniLink className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} cover to = "/about" bg="#6c757d" direction="right">bio</AniLink></li>
+                  <li><AniLink className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} paintDrip to ="/blog" hex="#6c757d" duration={1} >Blog</AniLink></li>
                 </ul>
+                
               </nav>
             </Col>
             <Col xs ={2} sm={ 1 }>          

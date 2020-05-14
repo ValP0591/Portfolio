@@ -9,6 +9,7 @@ import Head from '../components/head'
 import Button from 'react-bootstrap/Button'
 import { rhythm, scale } from "../utils/typography"
 import Hello from '../components/hello'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const IndexPage = () => {
     return (  
@@ -45,7 +46,7 @@ const IndexPage = () => {
             }}
             >Need a developer?</h5>
             
-            <Button variant="secondary"><Link to ="/contact/"
+            <Button variant="secondary"><AniLink paintDrip to ="/contact/" hex="#6c757d"
                 style={{
                     ...scale(.8),
                     fontFamily: `Titillium Web, sans-serif`,
@@ -58,7 +59,7 @@ const IndexPage = () => {
                     textShadow: '1px 1px 1px black',
                     textDecoration: 'none',       
                 }}
-            >Call me now</Link></Button>
+            >Call me now</AniLink></Button>
            
             <Container className="p-3">
                 <Row className="justify-content-md-center">
