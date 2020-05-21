@@ -4,6 +4,7 @@ import Head from '../components/head'
 import { rhythm, scale } from "../utils/typography"
 
 import Layout from '../components/layout'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Success = () => {
     return (
@@ -18,7 +19,7 @@ const Success = () => {
                 letterSpacing: -1,
                 }}>The message has been send!
             </h1>
-            <Link to="/">
+            <AniLink cover to="/" direction="left" bg="#6c757d" duration={2}>
                 <p style={{
                 ...scale(.6),
                 fontFamily: `Lora, sans-serif`,
@@ -28,9 +29,11 @@ const Success = () => {
                 transition: 'color 0.2s ease-out, background 0.2s ease-out',
                 fontWeight: 800, 
                 textDecoration: 'none',
-            }}>Let`s get back to home page</p></Link>
+            }}>Let`s get back to home page</p></AniLink>
         </Layout>
     )
 }
 
 export default Success
+
+ 

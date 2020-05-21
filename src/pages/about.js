@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Head from '../components/head'
 import { rhythm, scale } from "../utils/typography"
 import Button from 'react-bootstrap/Button'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const AboutPage = () => {
     return (
@@ -33,7 +34,7 @@ const AboutPage = () => {
               </br>Since the moment I get to know it I fell in love with JS.</p>
         
               <p>So, what are you waiting for? </p></div> 
-              <Button variant="outline-secondary"><Link to ="/contact/"
+              <Button variant="outline-secondary"><AniLink paintDrip to ="/contact/" hex="#6c757d"
                 style={{
                     ...scale(.8),
                     fontFamily: `Titillium Web, sans-serif`,
@@ -45,7 +46,7 @@ const AboutPage = () => {
                     textTransform: 'uppercase', 
                     textShadow: '1px 1px 4px black',       
                 }}>
-                    One click is all it takes.</Link></Button>
+                    One click is all it takes.</AniLink></Button>
         </Layout>    
     )
 }

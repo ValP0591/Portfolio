@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Head from '../components/head'
-
 import Layout from '../components/layout'
 import Shades from '../components/shades'
 import { rhythm, scale } from "../utils/typography"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const NotFound = () => {
     return (
@@ -19,7 +19,7 @@ const NotFound = () => {
                         transition: 'color 0.2s ease-out, background 0.2s ease-out',
                         fontWeight: 300,               
                     }}/>
-            <p><Link to="/">Let`s get back to home page</Link></p>
+            <p><AniLink paintDrip to ="/" hex="#6c757d">Let`s get back to home page</AniLink></p>
         </Layout>
     )
 }

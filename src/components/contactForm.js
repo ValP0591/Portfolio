@@ -2,6 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import { rhythm, scale } from "../utils/typography"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
  
 const ContactForm = (props) => (
     <section id="contact">
@@ -51,7 +52,8 @@ const ContactForm = (props) => (
                 />
                 
             <div className="d-flex justify-content-end">
-                <Button variant="secondary" type="submit" style={{
+                <Button variant="secondary" type="submit"><AniLink paintDrip to ="/success/" hex="#6c757d"
+                    style={{
                         ...scale(.8),
                         fontFamily: `Titillium Web, sans-serif`,
                         color: 'var(--buttonText)',
@@ -59,9 +61,10 @@ const ContactForm = (props) => (
                         borderRadius: '3px',
                         transition: 'color 1.2s ease-out, background 0.2s ease-out',
                         fontWeight: 800,   
-                        textTransform: 'uppercase',       
+                        textTransform: 'uppercase',
+                        fontDecoration: 'none'       
                 }}>Let's do it!
-                </Button>
+                </AniLink></Button>
             </div>
         </form>
     </section>
