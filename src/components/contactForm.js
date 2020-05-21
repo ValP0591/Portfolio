@@ -52,7 +52,7 @@ const ContactForm = (props) => (
                 />
                 
             <div className="d-flex justify-content-end">
-                <Button variant="secondary" type="submit">
+                <Button variant="secondary" type="submit"
                     style={{
                         ...scale(.8),
                         fontFamily: `Titillium Web, sans-serif`,
@@ -63,7 +63,7 @@ const ContactForm = (props) => (
                         fontWeight: 800,   
                         textTransform: 'uppercase',
                         fontDecoration: 'none'       
-                }}Let's do it!
+                }}>Let's do it!
                 </Button>
             </div>
         </form>
