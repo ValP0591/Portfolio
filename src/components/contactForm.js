@@ -52,7 +52,7 @@ const ContactForm = (props) => (
                 />
                 
             <div className="d-flex justify-content-end">
-                <Button variant="secondary" type="submit"><AniLink paintDrip to ="/success/" hex="#6c757d"
+                <Button variant="secondary" type="submit">
                     style={{
                         ...scale(.8),
                         fontFamily: `Titillium Web, sans-serif`,
@@ -63,8 +63,8 @@ const ContactForm = (props) => (
                         fontWeight: 800,   
                         textTransform: 'uppercase',
                         fontDecoration: 'none'       
-                }}>Let's do it!
-                </AniLink></Button>
+                }}Let's do it!
+                </Button>
             </div>
         </form>
     </section>
